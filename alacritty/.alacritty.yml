@@ -1,0 +1,58 @@
+
+window:
+  startup_mode: Maximized
+dynamic_title: true
+# Font configuration (changes require restart)
+font:
+  # Normal (roman) font face
+  normal:
+    family: JetBrains Mono
+    # The `style` can be specified to pick a specific face.
+    style: Regular
+
+  # Bold font face
+  bold:
+    family: JetBrains Mono
+    # The `style` can be specified to pick a specific face.
+    style: Bold
+
+  # Italic font face
+  italic:
+    family: JetBrains Mono
+    # The `style` can be specified to pick a specific face.
+    style: Italic
+  # Point size of the font
+  size: 11.0
+scrolling:
+  history: 10000
+
+# Colors (Monokai Soda)
+colors:
+  # Default colors
+  primary:
+    background: '#1a1a1a'
+    foreground: '#c4c5b5'
+  # Normal colors
+  normal:
+    black:   '#1a1a1a'
+    red:     '#f4005f'
+    green:   '#98e024'
+    yellow:  '#fa8419'
+    blue:    '#9d65ff'
+    magenta: '#f4005f'
+    cyan:    '#58d1eb'
+    white:   '#c4c5b5'
+  # Bright colors
+  bright:
+    black:   '#625e4c'
+    red:     '#f4005f'
+    green:   '#98e024'
+    yellow:  '#e0d561'
+    blue:    '#9d65ff'
+    magenta: '#f4005f'
+    cyan:    '#58d1eb'
+    white:   '#f6f6ef'
+
+# Background opacity
+background_opacity: 0.85
+blinking: On

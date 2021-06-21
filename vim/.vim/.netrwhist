@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/franz.nemeth/git-workspaces/rancher/service_accounts/ci-misc/design-system-jenkins-slaves'
+let g:netrw_dirhist_7='/home/franz.nemeth/git-workspaces/rancher/service_accounts/ci-arm/agent-test-ni'
+let g:netrw_dirhist_6='/home/franz.nemeth/git-workspaces/rancher/service_accounts/ci-windows/agent-build-ni'
+let g:netrw_dirhist_5='/home/franz.nemeth/git-workspaces/craftcms/db_sync'
+let g:netrw_dirhist_4='/home/franz.nemeth/git-workspaces/rancher/service_accounts/lab-gdn/dep-jenkins-ni'
+let g:netrw_dirhist_3='/home/franz.nemeth/.config/polo/workspaces'
+let g:netrw_dirhist_2='/home/franz.nemeth/.config/polo/rclone-mounts/Rook-Staging'
+let g:netrw_dirhist_1='/home/franz.nemeth/git-workspaces/packer/template/rhel/scripts'
+let g:netrw_dirhist_0='/home/franz.nemeth/git-workspaces/packer/template/rhel'
+let g:netrw_dirhist_9='/home/franz.nemeth/git-workspaces/script-collection/systemd-networkd Generator/generated/docker/ls-ub-h26'
