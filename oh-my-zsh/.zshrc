@@ -110,23 +110,6 @@ function kubedecode {
   kubectl get secrets $@ -ojson | /usr/local/bin/jq1.6 '.data | map_values (@base64d)'
 }
 
-function repoclean {
-  CWD=$(pwd)
-  . /home/franz.nemeth/own-workspaces/personal_scripts/colors.sh
-
-  echo -e "${GREEN}Unclean repositories:${DEFAULT}"
-  for i in $(ls -d */); do
-    cd $i
-    if [[ -n $(git status -s) ]]; then  
-      echo -e "${RED}${i}${DEFAULT}"
-      git status --short
-    fi
-    cd $CWD
-  done
-}
-
-export RS_ENDPOINT=https://***REMOVED***:443
-export RS_KEY=franz.nemeth:***REMOVED***
 #autoload bashcompinit
 #bashcompinit
 #source .drpcli_autocompletion
