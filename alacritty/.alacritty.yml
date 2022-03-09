@@ -1,5 +1,6 @@
 
 window:
+  opacity: 0.85
   startup_mode: Maximized
 dynamic_title: true
 # Font configuration (changes require restart)
@@ -53,6 +54,4 @@ colors:
     cyan:    '#58d1eb'
     white:   '#f6f6ef'
 
-# Background opacity
-background_opacity: 0.85
 blinking: On
