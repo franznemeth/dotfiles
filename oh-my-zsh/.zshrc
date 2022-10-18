@@ -57,11 +57,8 @@ plugins=(
         helm
         tmux
         dnf
-        python
-        pylint
         docker
         aws
-        kubetail
         )
 
 source $ZSH/oh-my-zsh.sh
@@ -105,6 +102,8 @@ export EDITOR="$VISUAL"
 alias kc="kubectl"
 alias watch="watch --color"
 alias http="http --pretty=all"
+alias doch='sudo $(history -p !!)'
+
 
 function kubedecode {
   kubectl get secrets $@ -ojson | /usr/local/bin/jq1.6 '.data | map_values (@base64d)'
