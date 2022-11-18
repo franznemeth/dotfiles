@@ -103,6 +103,8 @@ alias kc="kubectl"
 alias watch="watch --color"
 alias http="http --pretty=all"
 alias doch='sudo $(history -p !!)'
+mkdir -p ~/.kube/configs
+alias kmerge="KUBECONFIG=$(find ~/.kube/configs -type f | sed ':a;N;s/\n/:/;ba') kubectl config view --merge --flatten > ~/.kube/config"
 
 
 function kubedecode {
