@@ -108,7 +108,7 @@ alias kmerge="KUBECONFIG=$(find ~/.kube/configs -type f | sed ':a;N;s/\n/:/;ba')
 
 
 function kubedecode {
-  kubectl get secrets $@ -ojson | /usr/local/bin/jq1.6 '.data | map_values (@base64d)'
+  kubectl get secrets $@ -ojson | jq '.data | map_values (@base64d)'
 }
 
 #autoload bashcompinit
