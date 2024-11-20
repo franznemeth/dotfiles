@@ -23,7 +23,7 @@ alias ls="eza"
 function kmerge {
   mkdir -p ~/.kube/configs
   cp ~/.kube/config ~/.kube/config.kmerge.bak
-  KUBECONFIG=$(find ~/.kube/configs -type f | sed ':a;N;s/\n/:/;ba') kubectl config view --merge --flatten > ~/.kube/config
+  KUBECONFIG=$(find ~/.kube/configs -type f | gsed ':a;N;s/\n/:/;ba') kubectl config view --merge --flatten > ~/.kube/config
   export KUBECONFIG=~/.kube/config
 }
 
@@ -32,6 +32,8 @@ function kubedecode {
 }
 
 export PATH=~/.npm-global/bin:~/go/bin/:$PATH
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
