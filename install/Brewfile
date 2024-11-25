@@ -1,0 +1,49 @@
+tap "homebrew/bundle"
+
+# System utilities
+brew "bat"
+brew "eza"
+brew "gnu-sed"
+brew "go"
+brew "pkgconf"
+brew "helm"
+brew "htop"
+brew "httpie"
+brew "k9s"
+brew "kubernetes-cli"
+brew "krew"
+brew "kubectx"
+brew "mas"
+brew "pipx"
+brew "pwgen"
+brew "stern"
+brew "tmux"
+brew "reattach-to-user-namespace"
+brew "ripgrep"
+brew "virt-manager"
+brew "watch"
+brew "wget"
+cask "alacritty"
+brew "zsh-syntax-highlighting"
+cask "font-jetbrains-mono-nerd-font"
+cask "podman-desktop"
+
+# Nvim and nvim supporting tools
+brew "neovim"
+brew "black"
+brew "luarocks"
+brew "node"
+brew "pre-commit"
+brew "prettier"
+brew "fd"
+brew "rust"
+brew "stylua"
+brew "yaml-language-server"
+
+# Browsers
+cask "vivaldi"
+cask "firefox"
+
+# App Store apps
+mas "Amphetamine", id: 937984704
+mas "Magnet", id: "441258766"
