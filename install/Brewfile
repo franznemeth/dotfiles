@@ -46,4 +46,4 @@ cask "firefox"
 
 # App Store apps
 mas "Amphetamine", id: 937984704
-mas "Magnet", id: "441258766"
+mas "Magnet", id: 441258766
