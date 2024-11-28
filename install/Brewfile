@@ -27,6 +27,7 @@ cask "alacritty"
 brew "zsh-syntax-highlighting"
 cask "font-jetbrains-mono-nerd-font"
 cask "podman-desktop"
+cask "wireshark"
 
 # Nvim and nvim supporting tools
 brew "neovim"
