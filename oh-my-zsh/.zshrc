@@ -13,6 +13,7 @@ prompt_context() {
 }
 export VISUAL=nvim
 export EDITOR="$VISUAL"
+export BAT_THEME=Coldark-Dark
 alias kc="kubectl"
 alias watch="watch --color"
 alias http="http --pretty=all"
