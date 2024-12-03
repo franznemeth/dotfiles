@@ -1,10 +1,14 @@
 tap "homebrew/bundle"
 
 # System utilities
+brew "awscli"
+brew "coreutils"
 brew "bat"
 brew "eza"
 brew "gnu-sed"
 brew "go"
+brew "yq"
+brew "jq"
 brew "pkgconf"
 brew "htop"
 brew "httpie"
@@ -22,7 +26,10 @@ brew "zsh-syntax-highlighting"
 cask "font-jetbrains-mono-nerd-font"
 cask "podman-desktop"
 cask "wireshark"
+cask "dbeaver-community"
 brew "mtr"
+tap "hashicorp/tap"
+brew "hashicorp/tap/vault"
 
 # Kubernetes tooling
 brew "kind"
