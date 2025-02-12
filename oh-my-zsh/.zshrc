@@ -36,7 +36,7 @@ function kubedecode {
   kubectl get secrets $@ -ojson | jq '.data | map_values (@base64d)'
 }
 
-export PATH=~/.npm-global/bin:~/go/bin/:$PATH
+export PATH=/Users/franz.nemeth/.local/bin:~/.npm-global/bin:~/go/bin/:$PATH
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 if [ -f  /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then

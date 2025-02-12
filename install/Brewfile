@@ -21,7 +21,7 @@ brew "ripgrep"
 brew "virt-manager"
 brew "watch"
 brew "wget"
-cask "alacritty"
+cask "alacritty", args: { no_quarantine: true }
 brew "zsh-syntax-highlighting"
 cask "font-jetbrains-mono-nerd-font"
 cask "podman-desktop"
