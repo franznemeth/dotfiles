@@ -17,3 +17,9 @@ ln -s ~/git/private/dotfiles/tmux/.tmux.conf.local ~/.tmux.conf.local
 kc krew install neat slice exec-cronjob virt
 npm install -g neovim
 gem install neovim
+
+
+# Mac Only
+mkdir -p ~/Pictures/Screenshots
+defaults write com.apple.screencapture location /Users/franz.nemeth/Pictures/Screenshots
+
