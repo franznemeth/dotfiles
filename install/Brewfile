@@ -58,6 +58,8 @@ brew "yaml-language-server"
 cask "vivaldi"
 cask "firefox"
 
+# Mac utilities
+cask "rectangle"
+
 # App Store apps
 mas "Amphetamine", id: 937984704
-mas "Magnet", id: 441258766
