@@ -1,0 +1,13 @@
+{
+    "files.autoSave": "onFocusChange",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.tabActionLocation": "left",
+    "vs-kubernetes": {
+        "vs-kubernetes.crd-code-completion": "enabled"
+    },
+    "redhat.telemetry.enabled": false,
+    "git.autofetch": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "database-client.autoSync": true,
+    "window.zoomLevel": 0.5
+}
