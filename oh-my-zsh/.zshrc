@@ -20,6 +20,8 @@ alias http="http --pretty=all"
 #alias rdesktop="rdesktop -u labuser -r disk:share=/home/franz.nemeth/Downloads/windows_share $@"
 alias vim=nvim
 alias ls="eza"
+bindkey '^[[1;3C' forward-word
+bindkey '^[[1;3D' backward-word
 
 function kmerge {
   sed_cmd=sed
