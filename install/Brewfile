@@ -1,4 +1,10 @@
 tap "homebrew/bundle"
+tap "hashicorp/tap"
+tap "atlassian/acli"
+tap "avivsinai/tap"
+tap "dynatrace-internal/tap"
+tap "dynatrace-oss/tap"
+tap "robscott/tap"
 
 # System utilities
 brew "awscli"
@@ -21,17 +27,21 @@ brew "ripgrep"
 brew "virt-manager"
 brew "watch"
 brew "wget"
-cask "alacritty", args: { no_quarantine: true }
 brew "zsh-syntax-highlighting"
 brew "zsh-autosuggestions"
-cask "font-jetbrains-mono-nerd-font"
-cask "podman-desktop"
-cask "wireshark"
-cask "dbeaver-community"
 brew "mtr"
 brew "freerdp"
-tap "hashicorp/tap"
+brew "ipcalc"
+brew "ncdu"
+brew "nmap"
+brew "restic"
+brew "redis"
+brew "pipenv"
+brew "pyenv-virtualenv"
+brew "gh"
+brew "hashicorp/tap/terraform"
 brew "hashicorp/tap/vault"
+brew "dynatrace-internal/tap/junoctl"
 
 # Kubernetes tooling
 brew "kind"
@@ -41,6 +51,7 @@ brew "k9s"
 brew "kubernetes-cli"
 brew "krew"
 brew "kubectx"
+brew "argocd"
 
 # Nvim and nvim supporting tools
 brew "neovim"
@@ -60,6 +71,24 @@ cask "firefox"
 
 # Mac utilities
 cask "rectangle"
+cask "ghostty"
+
+# Development tools
+cask "alacritty"
+cask "visual-studio-code"
+cask "httpie-desktop"
+cask "apache-directory-studio"
+cask "podman-desktop"
+cask "dbeaver-community"
+cask "wireshark"
+cask "powershell"
+cask "dtctl"
+
+# Fonts
+cask "font-jetbrains-mono-nerd-font"
 
 # App Store apps
 mas "Amphetamine", id: 937984704
+mas "Microsoft To Do", id: 1274495053
+mas "Windows App", id: 1295203466
+mas "Xcode", id: 497799835
