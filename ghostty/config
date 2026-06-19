@@ -1,0 +1,8 @@
+font-family = "JetBrainsMono Nerd Font Mono"
+font-size = 14
+background-opacity = 0.85
+macos-titlebar-style = "transparent"
+#window-decoration = false
+theme = molokai-modified
+copy-on-select = clipboard
+selection-clear-on-copy = true
