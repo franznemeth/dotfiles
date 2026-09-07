@@ -16,6 +16,8 @@ ln -s "$DOTFILES_DIR/tmux/.tmux.conf.local" ~/.tmux.conf.local
 mkdir -p ~/.config/ghostty/themes
 ln -s "$DOTFILES_DIR/ghostty/config" ~/.config/ghostty/config
 ln -s "$DOTFILES_DIR/ghostty/molokai-modified.conf" ~/.config/ghostty/themes/molokai-modified
+mkdir -p ~/.claude
+ln -s "$DOTFILES_DIR/claude/statusline.sh" ~/.claude/statusline.sh
 
 
 kc krew install neat slice exec-cronjob virt
