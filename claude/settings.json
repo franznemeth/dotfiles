@@ -1,0 +1,89 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls ~/git/)",
+      "Read(//Users/franz.nemeth/git/**)",
+      "Bash(git -C ~/git/household-helper log --oneline -10)",
+      "Bash(git -C ~/git/household-helper log --oneline --follow -- backend/Dockerfile)",
+      "Bash(git -C ~/git/household-helper show bed1ac5:backend/Dockerfile)",
+      "Bash(xargs ls)",
+      "Bash(git -C ~/git/household-helper tag -l)",
+      "Bash(git -C ~/git/household-helper status)",
+      "Bash(git -C ~/git/household-helper log origin/main..HEAD --oneline)",
+      "Bash(git -C ~/git/household-helper log origin/master..HEAD --oneline)",
+      "Bash(git -C ~/git/household-helper tag v0.0.2)",
+      "Bash(git -C ~/git/household-helper push origin v0.0.2)",
+      "Bash(gh -R franznemeth/household-helper run list --limit 5)",
+      "Bash(gh -R franznemeth/household-helper run watch 25924406164 --exit-status)",
+      "Bash(git -C /Users/franz.nemeth/git/k8s-deployments pull origin master)",
+      "Bash(git -C /Users/franz.nemeth/git/k8s-deployments add deployments/lan/household-helper/templates/backend-deployment.yaml deployments/lan/household-helper/templates/frontend-deployment.yaml)",
+      "Bash(git -C /Users/franz.nemeth/git/k8s-deployments commit -m ' *)",
+      "Bash(kubectl exec *)",
+      "Bash(kubectl rollout *)",
+      "Bash(git -C /Users/franz.nemeth/git/k8s-deployments add deployments/lan/zeroclaw/templates/skill-recipe.yaml)",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(mkdir -p /Users/franz.nemeth/git/mindcloud/.claude)",
+      "Bash(/usr/local/bin/docker-compose up *)",
+      "Skill(run)",
+      "Skill(run:*)",
+      "WebSearch"
+    ],
+    "additionalDirectories": [
+      "/Users/franz.nemeth/git/mindcloud"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path' | { read -r f; if [[ \"$f\" == *.pdf ]]; then mkdir -p /tmp/claude-pdf-conversions && markitdown \"$f\" > /tmp/claude-pdf-conversions/$(basename \"${f%.*}\").md && echo '{\"systemMessage\": \"📄 PDF converted to markdown: /tmp/claude-pdf-conversions/'$(basename \"${f%.*}\").md'\"}'; fi; }",
+            "statusMessage": "Converting PDF to markdown with markitdown..."
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh"
+  },
+  "enabledPlugins": {
+    "obsidian@obsidian-skills": true,
+    "ponytail@ponytail": true,
+    "ui-ux-pro-max@ui-ux-pro-max-skill": true,
+    "taste-skill@taste-skill": true
+  },
+  "extraKnownMarketplaces": {
+    "obsidian-skills": {
+      "source": {
+        "source": "github",
+        "repo": "kepano/obsidian-skills"
+      }
+    },
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      }
+    },
+    "ui-ux-pro-max-skill": {
+      "source": {
+        "source": "github",
+        "repo": "nextlevelbuilder/ui-ux-pro-max-skill"
+      }
+    },
+    "taste-skill": {
+      "source": {
+        "source": "github",
+        "repo": "Leonxlnx/taste-skill"
+      }
+    }
+  },
+  "effortLevel": "high",
+  "tui": "fullscreen",
+  "agentPushNotifEnabled": true
+}
