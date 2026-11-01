@@ -44,6 +44,7 @@ brew "hashicorp/tap/vault"
 brew "dynatrace-internal/tap/junoctl"
 brew "ocrmypdf"
 brew "podman"
+brew "mole"
 
 # Kubernetes tooling
 brew "kind"
