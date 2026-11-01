@@ -42,6 +42,8 @@ brew "gh"
 brew "hashicorp/tap/terraform"
 brew "hashicorp/tap/vault"
 brew "dynatrace-internal/tap/junoctl"
+brew "ocrmypdf"
+brew "podman"
 
 # Kubernetes tooling
 brew "kind"
@@ -64,6 +66,8 @@ brew "fd"
 brew "rust"
 brew "stylua"
 brew "yaml-language-server"
+brew "shellcheck"
+brew "shfmt"
 
 # Browsers
 cask "vivaldi"
@@ -72,6 +76,7 @@ cask "firefox"
 # Mac utilities
 cask "rectangle"
 cask "ghostty"
+cask "obsidian"
 
 # Development tools
 cask "alacritty"
@@ -83,6 +88,8 @@ cask "dbeaver-community"
 cask "wireshark"
 cask "powershell"
 cask "dtctl"
+cask "claude-code"
+cask "github"
 
 # Fonts
 cask "font-jetbrains-mono-nerd-font"
